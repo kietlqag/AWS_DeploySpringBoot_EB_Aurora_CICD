@@ -37,11 +37,11 @@ VPC (10.0.0.0/16)
 
 ### 1.2 Tạo VPC mới
 1. Tìm và chọn service **VPC**
-![VPC Service](/images/003/01.png)
+![VPC Service](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/01.png)
 2. Click **Create VPC**
-![Create VPC](/images/003/02.png)
+![Create VPC](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/02.png)
 3. Chọn **VPC and more** (để tạo tự động các thành phần cơ bản)
-![VPC and more](/images/003/03.png)
+![VPC and more](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/03.png)
 4. Cấu hình thông tin VPC:
 
     **Name tag:** `carrentalweb-vpc`  
@@ -55,13 +55,13 @@ VPC (10.0.0.0/16)
     **VPC endpoints:** `None`
 
 5. Click **Create VPC**
-![Create VPC Button](/images/003/04.png)
+![Create VPC Button](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/04.png)
 
 ### 1.3 Kiểm tra VPC đã tạo
 1. Vào **Your VPCs**
 2. Xác nhận VPC `carrentalweb-vpc` đã được tạo
 3. Ghi lại **VPC ID**
-![VPC List](/images/003/05.png)
+![VPC List](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/05.png)
 
 ## Bước 2: Kiểm tra các thành phần
 
@@ -71,35 +71,35 @@ VPC (10.0.0.0/16)
    - 2 public: `carrentalweb-vpc-public-subnet-1`, `carrentalweb-vpc-public-subnet-2`
    - 2 private: `carrentalweb-vpc-private-subnet-1`, `carrentalweb-vpc-private-subnet-2`
 3. Ghi lại **Subnet IDs**
-![Subnets List](/images/003/06.png)
+![Subnets List](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/06.png)
 
 ### 2.2 Internet Gateway
 1. Vào **Internet Gateways**
 2. Xác nhận IGW đã attach với VPC `carrentalweb-vpc`
-![Internet Gateway](/images/003/07.png)
+![Internet Gateway](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/07.png)
 
 ### 2.3 NAT Gateway
 1. Vào **NAT Gateways**
 2. Xác nhận trạng thái là **Available**
 3. Ghi lại **NAT Gateway ID**
-![NAT Gateway](/images/003/08.png)
+![NAT Gateway](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/08.png)
 
 ### 2.4 Route Tables
 1. Vào **Route Tables**
 2. Xác nhận có 2 route tables:
    - Public: `0.0.0.0/0` → Internet Gateway
-   ![Public Route Table](/images/003/09.png)
+   ![Public Route Table](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/09.png)
    - Private: `0.0.0.0/0` → NAT Gateway
-   ![Private Route Table](/images/003/10.png)
+   ![Private Route Table](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/10.png)
 
 ## Bước 3: Tạo DB Subnet Group
 
 ### 3.1 Tạo DB Subnet Group cho RDS
 1. Tìm và chọn service **Aurora and RDS**
-![Aurora RDS Service](/images/003/11.png)
+![Aurora RDS Service](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/11.png)
 2. Vào **Subnet groups**
 3. Click **Create DB subnet group**
-![Create DB Subnet Group](/images/003/12.png)
+![Create DB Subnet Group](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/12.png)
 4. Điền thông tin:
 
     **Name:** `carrentalweb-db-subnet-group`  
@@ -109,9 +109,9 @@ VPC (10.0.0.0/16)
     **Subnets:** chọn 2 private subnets
 
 5. Click **Create**
-![Create Button](/images/003/13.png)
+![Create Button](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/13.png)
 6. Xác nhận tạo thành công
-![DB Subnet Group Created](/images/003/14.png)
+![DB Subnet Group Created](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/14.png)
 
 ## Lưu ý quan trọng
 
