@@ -21,19 +21,19 @@ After completing the workshop and testing the application, you should clean up A
 1. Go to **Elastic Beanstalk Console** → **Environments**
 2. Select environment `carrentalweb-prod`
 3. Click **Actions** → **Terminate environment**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/01.png)
+![](/images/009/01.png)
 4. Enter environment name and select **Terminate**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/02.png)
+![](/images/009/02.png)
 5. Confirm successful deletion (When "terminated" appears after the environment name)
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/03.png)
+![](/images/009/03.png)
 
 ### 1.2 Delete Application
 1. After the environment is deleted
 2. Select application `carrentalweb-app`
 3. Click **Actions** → **Delete application**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/04.png)
+![](/images/009/04.png)
 4. Enter application name to confirm and select **Delete**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/05.png)
+![](/images/009/05.png)
 5. Application name will disappear after successful deletion
 
 ## Step 2: Delete Aurora Serverless Cluster
@@ -42,22 +42,22 @@ After completing the workshop and testing the application, you should clean up A
 1. Go to **RDS Console** → **Databases**
 2. Select cluster `carrentalweb-aurora-cluster-instance-1`
 3. Click **Actions** → **Delete**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/06.png)
+![](/images/009/06.png)
 4. Enter `delete me` and select **Delete**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/07.png)
+![](/images/009/07.png)
 5. Select cluster `carrentalweb-aurora-cluster`
 6. Click **Actions** → **Delete**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/08.png)
+![](/images/009/08.png)
 7. Select as shown and choose **Delete DB Cluster**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/09.png)
+![](/images/009/09.png)
 8. Confirm successful deletion
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/10.png)
+![](/images/009/10.png)
 
 ### 2.2 Delete Subnet Group
 1. Go to **RDS Console** → **Subnet groups**
 2. Select `carrentalweb-aurora-subnet-group`
 3. Select **Delete**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/11.png)
+![](/images/009/11.png)
 5. Click **Delete** again. When successfully deleted, the subnet group name will disappear
 
 ## Step 3: Delete Security Groups
@@ -65,7 +65,7 @@ After completing the workshop and testing the application, you should clean up A
 ### 3.1 Delete RDS Security Group
 1. Find `carrentalweb-rds-sg`
 2. Select → **Actions** → **Delete security group**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/13.png)
+![](/images/009/13.png)
 3. Click **Delete**
 
 ### 3.2 Delete EB Security Group (similar to 3.1)
@@ -80,7 +80,7 @@ After completing the workshop and testing the application, you should clean up A
 1. Go to **VPC Console** → **NAT gateways**
 2. Select `carrentalweb-nat-public1-us-east-1a`
 3. Click **Actions** → **Delete NAT gateway**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/16.png)
+![](/images/009/16.png)
 4. Enter `delete` and Click **Delete**
 5. Perform the same for the remaining NAT Gateway
 
@@ -88,7 +88,7 @@ After completing the workshop and testing the application, you should clean up A
 1. Go to **VPC Console** → **Elastic IPs**
 2. Select the EIP being used
 3. Click **Actions** → **Release Elastic IPs**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/15.png)
+![](/images/009/15.png)
 4. Click **Release**
 
 ### 4.3 Delete Internet Gateway
@@ -96,29 +96,29 @@ After completing the workshop and testing the application, you should clean up A
    - Go to **VPC Console** → **Internet gateways**
    - Select `carrentalweb-igw`
    - Click **Actions** → **Detach from VPC**
-   ![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/14.png)
+   ![](/images/009/14.png)
    - Click **Detach internet gateway**
 
 2. **Delete Internet Gateway:**
    - Click **Actions** → **Delete internet gateway**
-   ![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/17.png)
+   ![](/images/009/17.png)
    - Enter `delete` and Click **Delete**
 
 ### 4.4 Delete VPC
 1. **VPC Console** → **Your VPCs**
 2. Select `carrentalweb-vpc`
 3. Click **Actions** → **Delete VPC**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/12.png)
+![](/images/009/12.png)
 4. Enter `delete` and Click **Delete**
 5. VPC and related configurations like Subnet, Route table will also be deleted
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/18.png)
+![](/images/009/18.png)
 
 ## Step 5: Delete IAM Roles
 1. Go to **IAM Console** → **Users**
 2. Find `carrentalweb-cicd-user`
 3. Select → **Delete**
 4. Select **Deactivate access key**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/19.png)
+![](/images/009/19.png)
 4. Then enter `confirm` and Click **Delete user**
 
 ## Important Notes

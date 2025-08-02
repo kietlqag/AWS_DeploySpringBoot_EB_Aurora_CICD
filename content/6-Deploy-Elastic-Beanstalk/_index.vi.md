@@ -31,10 +31,10 @@ ls -la target/CarRentalWeb-1.0.0.jar
 
 ### 2.1 Đăng nhập EB Console
 1. Tìm và chọn service **Elastic Beanstalk**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/01.png)
+![](/images/006/01.png)
 2. Đảm bảo đang ở region **us-east-1** (hoặc region tương ứng ở các bước trước)
 3. Click **Create application**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/02.png)
+![](/images/006/02.png)
 
 ### 2.2 Cấu hình Application và Environment
 1. Trong **Step 1: Configure environment**:
@@ -50,8 +50,8 @@ ls -la target/CarRentalWeb-1.0.0.jar
    - **Version label**: `1.0.0`
    - Chọn **Local file**
    - Upload file JAR: `CarRentalWeb-1.0.0.jar`
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/03.png)
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/04.png)
+![](/images/006/03.png)
+![](/images/006/04.png)
 
 ### 2.3 Cấu hình Service Access
 1. Trong **Step 2: Configure service access**:
@@ -63,7 +63,7 @@ ls -la target/CarRentalWeb-1.0.0.jar
      - Nếu không có: Click **Create and use new instance profile** → Tự động tạo
    - **EC2 key pair**: None (cho development)
 2. Click **Next**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/05.png)
+![](/images/006/05.png)
 
 ### 2.4 Cấu hình Networking
 1. Trong **Step 3: Set up networking, database, and tags**:
@@ -73,7 +73,7 @@ ls -la target/CarRentalWeb-1.0.0.jar
    - **Load balancer subnets**: `carrentalweb-vpc-public-subnet-1`, `carrentalweb-vpc-public-subnet-2`
    - **Security groups**: `carrentalweb-eb-sg`
 2. Click **Next**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/06.png)
+![](/images/006/06.png)
 
 ### 2.5 Cấu hình Environment Variables
 1. Trong **Step 4: Configure updates, monitoring, and logging**:
@@ -91,27 +91,27 @@ ls -la target/CarRentalWeb-1.0.0.jar
      DDL_AUTO: update
      ```
 2. Click **Next**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/07.png)
+![](/images/006/07.png)
 
 ### 2.6 Deploy Application
 1. Sau khi hoàn thành tất cả các Step, click **Create**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/08.png)
+![](/images/006/08.png)
 2. Theo dõi quá trình deployment
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/09.png)
+![](/images/006/09.png)
 3. Đợi Health chuyển thành **OK**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/10.png)
+![](/images/006/10.png)
 
 ## Bước 3: Kiểm tra ứng dụng
 
 ### 3.1 Test Application
 1. Mở browser
 2. Truy cập: `http://[EB_URL]`. Nếu hiện lên giao diện như sau thì đã deploy dự án thành công:
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/001.png)
+![](/images/006/001.png)
 3. Kiểm tra ứng dụng hoạt động
 - Thêm `/login, /register, /home` vào sau đường dẫn để test giao diện
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/002.png)
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/003.png)
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/004.png)
+![](/images/006/002.png)
+![](/images/006/003.png)
+![](/images/006/004.png)
 
 **💡 Lỗi thường gặp**: Elastic Beanstalk tự động detect sai port 8080 thay vì 5000
 

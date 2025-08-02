@@ -9,7 +9,7 @@ baseURL = "https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/"
 home = [ "HTML", "RSS", "JSON"]
 
 # Enable relative URLs for better compatibility
-relativeURLs = false
+relativeURLs = true
 
 # Static file handling
 [markup]

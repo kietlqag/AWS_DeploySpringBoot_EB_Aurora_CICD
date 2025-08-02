@@ -22,7 +22,7 @@ Amazon Aurora Serverless MySQL is a serverless database that automatically scale
 1. Find and select **Aurora and RDS** service
 2. Ensure you're in region **us-east-1** (or corresponding region from previous steps)
 3. Click **Create database**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/005/01.png)
+![](/images/005/01.png)
 
 ### 1.2 Configure Database
 1. **Choose a database creation method**: Standard create
@@ -61,9 +61,9 @@ Amazon Aurora Serverless MySQL is a serverless database that automatically scale
 
 ### 1.7 Create Database
 1. Click **Create database**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/005/02.png)
+![](/images/005/02.png)
 2. Wait for status to change to **Available**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/005/03.png)
+![](/images/005/03.png)
 
 ## Step 2: Test Query Editor
 
@@ -73,10 +73,10 @@ Amazon Aurora Serverless MySQL is a serverless database that automatically scale
 3. **Database**: Select `carrentalweb-aurora-cluster`
 4. **Database user**: `adminws`
 5. **Database password**: [PASSWORD]
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/005/04.png)
+![](/images/005/04.png)
 6. Click **Connect to database**
 7. Confirm successful connection
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/005/05.png)
+![](/images/005/05.png)
 
 ### 2.2 Test Query
 ```sql
@@ -97,7 +97,7 @@ INSERT INTO test_table (name) VALUES ('Test Data');
 SELECT * FROM test_table;
 ```
 - Confirm success
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/005/06.png)
+![](/images/005/06.png)
 
 ## Step 3: Configure Environment Variables
 

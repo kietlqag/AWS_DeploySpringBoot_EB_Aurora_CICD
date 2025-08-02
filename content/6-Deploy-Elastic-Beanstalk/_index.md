@@ -31,10 +31,10 @@ ls -la target/CarRentalWeb-1.0.0.jar
 
 ### 2.1 Access EB Console
 1. Find and select **Elastic Beanstalk** service
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/01.png)
+![](/images/006/01.png)
 2. Ensure you're in **us-east-1** region (or the region used in previous steps)
 3. Click **Create application**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/02.png)
+![](/images/006/02.png)
 
 ### 2.2 Configure Application and Environment
 1. In **Step 1: Configure environment**:
@@ -50,8 +50,8 @@ ls -la target/CarRentalWeb-1.0.0.jar
    - **Version label**: `1.0.0`
    - Select **Local file**
    - Upload JAR file: `CarRentalWeb-1.0.0.jar`
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/03.png)
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/04.png)
+![](/images/006/03.png)
+![](/images/006/04.png)
 
 ### 2.3 Configure Service Access
 1. In **Step 2: Configure service access**:
@@ -63,7 +63,7 @@ ls -la target/CarRentalWeb-1.0.0.jar
      - If not: Click **Create and use new instance profile** → Auto-create
    - **EC2 key pair**: None (for development)
 2. Click **Next**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/05.png)
+![](/images/006/05.png)
 
 ### 2.4 Configure Networking
 1. In **Step 3: Set up networking, database, and tags**:
@@ -73,7 +73,7 @@ ls -la target/CarRentalWeb-1.0.0.jar
    - **Load balancer subnets**: `carrentalweb-vpc-public-subnet-1`, `carrentalweb-vpc-public-subnet-2`
    - **Security groups**: `carrentalweb-eb-sg`
 2. Click **Next**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/06.png)
+![](/images/006/06.png)
 
 ### 2.5 Configure Environment Variables
 1. In **Step 4: Configure updates, monitoring, and logging**:
@@ -91,27 +91,27 @@ ls -la target/CarRentalWeb-1.0.0.jar
      DDL_AUTO: update
      ```
 2. Click **Next**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/07.png)
+![](/images/006/07.png)
 
 ### 2.6 Deploy Application
 1. After completing all Steps, click **Create**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/08.png)
+![](/images/006/08.png)
 2. Monitor deployment process
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/09.png)
+![](/images/006/09.png)
 3. Wait for Health to turn **OK**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/10.png)
+![](/images/006/10.png)
 
 ## Step 3: Test the Application
 
 ### 3.1 Test Application
 1. Open browser
 2. Visit: `http://[EB_URL]`. If you see the interface below, the project has been deployed successfully:
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/001.png)
+![](/images/006/001.png)
 3. Check application functionality
 - Add `/login, /register, /home` to the URL to test interfaces
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/002.png)
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/003.png)
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/006/004.png)
+![](/images/006/002.png)
+![](/images/006/003.png)
+![](/images/006/004.png)
 
 **💡 Common Issue**: Elastic Beanstalk automatically detects wrong port 8080 instead of 5000
 

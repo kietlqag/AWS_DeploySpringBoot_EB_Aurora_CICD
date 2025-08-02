@@ -20,9 +20,9 @@ CI/CD (Continuous Integration/Continuous Deployment) giúp tự động hóa qu�
 
 ### 1.1 Tạo IAM User
 1. Tìm và chọn dịch vụ **IAM** 
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/01.png)
+![](/images/008/01.png)
 2. Chọn **Users** và chọn **Create user**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/02.png)
+![](/images/008/02.png)
 3. **User name**: `carrentalweb-cicd-user`
 4. Click **Next**
 
@@ -33,17 +33,17 @@ CI/CD (Continuous Integration/Continuous Deployment) giúp tự động hóa qu�
    - `AmazonS3FullAccess`
    - `AmazonEC2FullAccess`
 3. Click **Next**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/03.png)
+![](/images/008/03.png)
 5. Click **Create user**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/04.png)
+![](/images/008/04.png)
 6. Click vào tên user vừa tạo, chọn **Create access key**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/05.png)
+![](/images/008/05.png)
 7. Click chọn **Other**, sau đó **Next**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/06.png)
+![](/images/008/06.png)
 8. Click chọn **Creat access key**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/07.png)
+![](/images/008/07.png)
 9. Xác nhận tạo thành công
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/08.png)
+![](/images/008/08.png)
 
 ### 1.3 Lưu thông tin quan trọng
 ```
@@ -57,7 +57,7 @@ Secret Access Key: [SECRET_KEY]
 1. Vào GitHub repository
 2. **Settings** → **Secrets and variables** → **Actions**
 3. Click **New repository secret**
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/09.png)
+![](/images/008/09.png)
 
 ### 2.2 Thêm các Secrets
 ```
@@ -67,7 +67,7 @@ AWS_REGION: us-east-1
 EB_APPLICATION_NAME: carrentalweb-app
 EB_ENVIRONMENT_NAME: carrentalweb-prod
 ```
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/10.png)
+![](/images/008/10.png)
 
 ## Bước 3: Tạo GitHub Actions Workflow
 
@@ -138,7 +138,7 @@ jobs:
 1. Tạo một thay đổi nhỏ trong code (VD: Thay chữ "Hi!" ở trang đăng nhập thành "Quốc Kiệt")
 - Sửa dòng 19 file /resource/templates/login.htmt: thay chữ Hi! sang Quốc Kiệt
 - Kiểm tra giao diện trước khi push code mới
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/11.png)
+![](/images/008/11.png)
 2. Commit và push lên GitHub:
 ```bash
 git add .
@@ -146,17 +146,17 @@ git commit -m "Test CI/CD Deployment"
 git push origin main
 ```
 3. Vào **GitHub Repository** → **Actions** tab, theo dõi GitHub Actions:
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/12.png)
+![](/images/008/12.png)
 4. Chờ trạng thái chuyển sang màu xanh lá
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/13.png)
+![](/images/008/13.png)
 
 ### 4.3 Kiểm tra deployment
 1. Vào **Elastic Beanstalk Console**
 2. Kiểm tra environment `carrentalweb-prod`
 3. Tab **Events** → Xem deployment events
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/14.png)
+![](/images/008/14.png)
 4. Truy cập lại URL ứng dụng để đảm bảo thay đổi đã được deploy
-![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/15.png)
+![](/images/008/15.png)
 
 
 ### 4.4 Test rollback (nếu cần)
