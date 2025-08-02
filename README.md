@@ -1,62 +1,58 @@
-# AWS Workshop Template
+# AWS Workshop - Spring Boot Deployment
 
-Hugo-based workshop template for AWS tutorials and guides.
+## Overview
 
-## Features
+This workshop provides a comprehensive guide for deploying Spring Boot applications to AWS using Elastic Beanstalk and Aurora Serverless MySQL. The workshop covers the complete infrastructure setup from VPC creation to automated CI/CD pipeline configuration.
 
-- Multi-language support (English and Vietnamese)
-- Responsive design with Hugo Learn theme
-- Image optimization
-- GitHub Pages ready
+## What You'll Learn
 
-## Local Development
+- Create custom VPC with high security configurations
+- Set up Aurora Serverless MySQL database with Data API
+- Deploy Spring Boot application to Elastic Beanstalk
+- Configure automated CI/CD pipeline with GitHub Actions
+- Test application connectivity with database
+- Clean up AWS resources properly
 
-1. Install Hugo Extended version
-2. Clone this repository
-3. Run `hugo server` for local development
-4. Visit `http://localhost:1313`
+## Workshop Modules
 
-## Deployment
+1. **Introduction** - Overview and prerequisites
+2. **Environment Preparation** - Install tools and configure AWS
+3. **Create Custom VPC** - Build network infrastructure
+4. **Create Security Groups** - Configure network security
+5. **Create Aurora Serverless MySQL** - Set up Aurora database
+6. **Deploy Elastic Beanstalk** - Deploy Spring Boot application
+7. **Test Application** - Verify application functionality
+8. **Configure CI/CD** - Automate deployment with GitHub Actions
+9. **Clean Up Resources** - Delete AWS resources
 
-### GitHub Pages
+## Expected Results
 
-1. Push code to GitHub repository
-2. Enable GitHub Pages in repository settings
-3. Set source to GitHub Actions or main branch
-4. Site will be available at `https://username.github.io/repository-name/`
+After completing this workshop, you will have:
+- A fully functional Spring Boot application running on AWS Elastic Beanstalk
+- Aurora Serverless MySQL database with Data API enabled
+- Custom VPC with high security configurations
+- Automated CI/CD pipeline using GitHub Actions
+- Query Editor for database management
 
-### Netlify
+## Prerequisites
 
-1. Connect repository to Netlify
-2. Build command: `hugo --minify`
-3. Publish directory: `public`
-4. Site will be deployed automatically
+- AWS Account with appropriate permissions
+- GitHub Account (for CI/CD pipeline)
+- Basic knowledge of Spring Boot framework
+- Basic understanding of AWS services
+- Local development environment with required tools
 
-## Structure
+## Getting Started
 
-```
-content/
-├── _index.md          # Homepage
-├── 1-Gioi-thieu/      # Introduction
-├── 2-Chuan-bi-moi-truong/  # Environment setup
-├── 3-Tao-VPC-tuy-chinh/    # VPC creation
-├── 4-Tao-Security-Groups/  # Security groups
-├── 5-Tao-Aurora-Database/  # Database setup
-├── 6-Deploy-Elastic-Beanstalk/  # Application deployment
-├── 7-Test-ung-dung/   # Testing
-├── 8-Cau-hinh-CI-CD/  # CI/CD configuration
-└── 9-Don-dep-tai-nguyen/  # Cleanup
-```
+1. Ensure you have an AWS account with appropriate permissions
+2. Set up your local development environment
+3. Follow the workshop modules in sequence
+4. Complete the cleanup section to avoid unnecessary charges
 
-## Configuration
+## Support
 
-- `config.toml`: Main Hugo configuration
-- `static/_redirects`: Redirect rules for SPA routing
-- `netlify.toml`: Netlify deployment configuration
+For questions or issues, please refer to the workshop documentation or AWS documentation for specific services.
 
-## Issues Fixed
+## License
 
-- ✅ Fixed baseURL configuration
-- ✅ Fixed image file extensions
-- ✅ Added proper redirect rules
-- ✅ Configured for GitHub Pages deployment 
+This workshop is provided as-is for educational purposes.
