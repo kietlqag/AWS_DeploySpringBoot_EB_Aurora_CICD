@@ -9,10 +9,15 @@ baseURL = "https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/"
 home = [ "HTML", "RSS", "JSON"]
 
 # Enable relative URLs for better compatibility
-relativeURLs = false
+relativeURLs = true
 
 # Disable robots.txt generation (GitHub Pages handles this)
 enableRobotsTXT = false
+
+# Configure image processing
+[imaging]
+  quality = 85
+  resampleFilter = "Lanczos"
 
 [params]
   # Change default color scheme with a variant one. Can be "red", "blue", "green".

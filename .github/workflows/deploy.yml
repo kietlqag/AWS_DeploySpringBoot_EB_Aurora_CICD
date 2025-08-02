@@ -39,7 +39,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/" --environment production
+          hugo --minify --baseURL "https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/" --environment production
           
       - name: Create .nojekyll file
         run: touch ./public/.nojekyll
