@@ -37,11 +37,11 @@ VPC (10.0.0.0/16)
 
 ### 1.2 Tạo VPC mới
 1. Tìm và chọn service **VPC**
-![VPC Service](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICDhttps://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/01.png)
+![VPC Service](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/01.png)
 2. Click **Create VPC**
-![Create VPC](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICDhttps://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/02.png)
+![Create VPC](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/02.png)
 3. Chọn **VPC and more** (để tạo tự động các thành phần cơ bản)
-![VPC and more](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICDhttps://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/03.png)
+![VPC and more](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/03.png)
 4. Cấu hình thông tin VPC:
 
     **Name tag:** `carrentalweb-vpc`  
