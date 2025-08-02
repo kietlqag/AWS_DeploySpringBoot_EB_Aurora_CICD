@@ -16,6 +16,8 @@ relativeURLs = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
 
 # Disable robots.txt generation (GitHub Pages handles this)
 enableRobotsTXT = false

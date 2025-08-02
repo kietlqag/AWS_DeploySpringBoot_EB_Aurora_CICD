@@ -37,11 +37,11 @@ VPC (10.0.0.0/16)
 
 ### 1.2 Create New VPC
 1. Find and select **VPC** service
-![](/images/003/01.png)
+![VPC Service](/images/003/01.png)
 2. Click **Create VPC**
-![](/images/003/02.png)
+![Create VPC](/images/003/02.png)
 3. Select **VPC and more** (to automatically create basic components)
-![](/images/003/03.png)
+![VPC and more](/images/003/03.png)
 4. Configure VPC information:
 
     **Name tag:** `carrentalweb-vpc`  
@@ -55,13 +55,13 @@ VPC (10.0.0.0/16)
     **VPC endpoints:** `None`
 
 5. Click **Create VPC**
-![](/images/003/04.png)
+![Create VPC Button](/images/003/04.png)
 
 ### 1.3 Verify VPC Creation
 1. Go to **Your VPCs**
 2. Confirm VPC `carrentalweb-vpc` has been created
 3. Note down **VPC ID**
-![](/images/003/05.png)
+![VPC List](/images/003/05.png)
 
 ## Step 2: Verify Components
 
@@ -71,35 +71,35 @@ VPC (10.0.0.0/16)
    - 2 public: `carrentalweb-vpc-public-subnet-1`, `carrentalweb-vpc-public-subnet-2`
    - 2 private: `carrentalweb-vpc-private-subnet-1`, `carrentalweb-vpc-private-subnet-2`
 3. Note down **Subnet IDs**
-![](/images/003/06.png)
+![Subnets List](/images/003/06.png)
 
 ### 2.2 Internet Gateway
 1. Go to **Internet Gateways**
 2. Confirm IGW is attached to VPC `carrentalweb-vpc`
-![](/images/003/07.png)
+![Internet Gateway](/images/003/07.png)
 
 ### 2.3 NAT Gateway
 1. Go to **NAT Gateways**
 2. Confirm status is **Available**
 3. Note down **NAT Gateway ID**
-![](/images/003/08.png)
+![NAT Gateway](/images/003/08.png)
 
 ### 2.4 Route Tables
 1. Go to **Route Tables**
 2. Confirm there are 2 route tables:
    - Public: `0.0.0.0/0` → Internet Gateway
-   ![](/images/003/09.png)
+   ![Public Route Table](/images/003/09.png)
    - Private: `0.0.0.0/0` → NAT Gateway
-   ![](/images/003/10.png)
+   ![Private Route Table](/images/003/10.png)
 
 ## Step 3: Create DB Subnet Group
 
 ### 3.1 Create DB Subnet Group for RDS
 1. Find and select **Aurora and RDS** service
-![](/images/003/11.png)
+![Aurora RDS Service](/images/003/11.png)
 2. Go to **Subnet groups**
 3. Click **Create DB subnet group**
-![](/images/003/12.png)
+![Create DB Subnet Group](/images/003/12.png)
 4. Fill in information:
 
     **Name:** `carrentalweb-db-subnet-group`  
@@ -109,9 +109,9 @@ VPC (10.0.0.0/16)
     **Subnets:** select 2 private subnets
 
 5. Click **Create**
-![](/images/003/13.png)
+![Create Button](/images/003/13.png)
 6. Confirm successful creation
-![](/images/003/14.png)
+![DB Subnet Group Created](/images/003/14.png)
 
 ## Important Notes
 
