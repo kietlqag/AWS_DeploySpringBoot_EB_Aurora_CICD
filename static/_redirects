@@ -1,2 +1,11 @@
 # Redirect rules for GitHub Pages
-/*    /index.html   200 
+/*    /index.html   200
+
+# Handle SPA routing
+/3-tao-vpc-tuy-chinh/    /3-tao-vpc-tuy-chinh/index.html   200
+/4-tao-security-groups/    /4-tao-security-groups/index.html   200
+/5-tao-aurora-database/    /5-tao-aurora-database/index.html   200
+/6-deploy-elastic-beanstalk/    /6-deploy-elastic-beanstalk/index.html   200
+/7-test-ung-dung/    /7-test-ung-dung/index.html   200
+/8-cau-hinh-ci-cd/    /8-cau-hinh-ci-cd/index.html   200
+/9-don-dep-tai-nguyen/    /9-don-dep-tai-nguyen/index.html   200 

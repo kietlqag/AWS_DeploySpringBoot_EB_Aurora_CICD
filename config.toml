@@ -2,7 +2,7 @@
 theme = "hugo-theme-learn"
 
 # Base URL for the site - GitHub Pages
-baseURL = "https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/"
+baseURL = "https://kietlqag.github.io/Workshop-template/"
 
 # For search functionality
 [outputs]
@@ -10,6 +10,12 @@ home = [ "HTML", "RSS", "JSON"]
 
 # Enable relative URLs for better compatibility
 relativeURLs = true
+
+# Static file handling
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 # Disable robots.txt generation (GitHub Pages handles this)
 enableRobotsTXT = false
@@ -29,6 +35,9 @@ enableRobotsTXT = false
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
+  
+  # Enable image processing
+  enableImageProcessing = true
   
 [Languages]
 [Languages.en]

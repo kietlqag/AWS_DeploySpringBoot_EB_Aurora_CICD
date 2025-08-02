@@ -1,15 +1,8 @@
 # Hugo default output directory
 /public/
 
-# Hugo default output directory
-/resources/_gen/
-
-# Hugo cache files
+# Hugo cache
 .hugo_build.lock
-
-# Temporary files
-*.tmp
-*.temp
 
 # OS generated files
 .DS_Store
@@ -29,6 +22,6 @@ Thumbs.db
 # Logs
 *.log
 
-# Environment variables
-.env
-.env.local 
+# Temporary files
+*.tmp
+*.temp 
