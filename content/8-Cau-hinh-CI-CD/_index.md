@@ -20,9 +20,9 @@ CI/CD (Continuous Integration/Continuous Deployment) helps automate the process 
 
 ### 1.1 Create IAM User
 1. Find and select **IAM** service
-![](/images/008/01.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/01.png)
 2. Select **Users** and choose **Create user**
-![](/images/008/02.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/02.png)
 3. **User name**: `carrentalweb-cicd-user`
 4. Click **Next**
 
@@ -33,17 +33,17 @@ CI/CD (Continuous Integration/Continuous Deployment) helps automate the process 
    - `AmazonS3FullAccess`
    - `AmazonEC2FullAccess`
 3. Click **Next**
-![](/images/008/03.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/03.png)
 5. Click **Create user**
-![](/images/008/04.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/04.png)
 6. Click on the created user name, select **Create access key**
-![](/images/008/05.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/05.png)
 7. Click select **Other**, then **Next**
-![](/images/008/06.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/06.png)
 8. Click select **Create access key**
-![](/images/008/07.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/07.png)
 9. Confirm successful creation
-![](/images/008/08.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/08.png)
 
 ### 1.3 Save Important Information
 ```
@@ -57,7 +57,7 @@ Secret Access Key: [SECRET_KEY]
 1. Go to GitHub repository
 2. **Settings** → **Secrets and variables** → **Actions**
 3. Click **New repository secret**
-![](/images/008/09.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/09.png)
 
 ### 2.2 Add Secrets
 ```
@@ -67,7 +67,7 @@ AWS_REGION: us-east-1
 EB_APPLICATION_NAME: carrentalweb-app
 EB_ENVIRONMENT_NAME: carrentalweb-prod
 ```
-![](/images/008/10.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/10.png)
 
 ## Step 3: Create GitHub Actions Workflow
 
@@ -138,7 +138,7 @@ jobs:
 1. Make a small change in the code (e.g., Change "Hi!" on the login page to "Quoc Kiet")
 - Edit line 19 of file /resource/templates/login.html: change "Hi!" to "Quoc Kiet"
 - Check the interface before pushing new code
-![](/images/008/11.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/11.png)
 2. Commit and push to GitHub:
 ```bash
 git add .
@@ -146,17 +146,17 @@ git commit -m "Test CI/CD Deployment"
 git push origin main
 ```
 3. Go to **GitHub Repository** → **Actions** tab, monitor GitHub Actions:
-![](/images/008/12.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/12.png)
 4. Wait for status to turn green
-![](/images/008/13.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/13.png)
 
 ### 4.3 Check deployment
 1. Go to **Elastic Beanstalk Console**
 2. Check environment `carrentalweb-prod`
 3. **Events** tab → View deployment events
-![](/images/008/14.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/14.png)
 4. Access the application URL again to ensure changes have been deployed
-![](/images/008/15.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/008/15.png)
 
 
 ### 4.4 Test rollback (if needed)

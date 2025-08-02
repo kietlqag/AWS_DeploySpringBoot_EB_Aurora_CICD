@@ -36,12 +36,12 @@ Sau khi deploy thành công ứng dụng Spring Boot lên Elastic Beanstalk và 
    - **Email**: [Email của bạn]
    - **Password**: `123`
 3. Click **Register**
-![](/images/007/01.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/01.png)
 4. Kiểm tra email nhập mã xác thực
-![](/images/007/02.png)
-![](/images/007/03.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/02.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/03.png)
 5. Xác nhận đăng ký thành công
-![](/images/007/04.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/04.png)
 
 ### 2.2 Kiểm tra dữ liệu trong database
 1. Vào **RDS Console** → **Query Editor**
@@ -52,7 +52,7 @@ USE carrentalweb;
 SELECT * FROM accounts WHERE full_name = 'testuser';
 ```
 4. Xác nhận user đã được tạo
-![](/images/007/05.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/05.png)
 
 ## Bước 3: Test chức năng đăng nhập
 
@@ -61,12 +61,12 @@ SELECT * FROM accounts WHERE full_name = 'testuser';
 2. Đăng nhập với thông tin vừa tạo:
    - **Email**: [Email đã đăng ký ở bước 1]
    - **Password**: `123`
-![](/images/007/06.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/06.png)
 3. Kiểm tra:
    - Đăng nhập thành công
    - Redirect về dashboard
    - Session được tạo
-![](/images/007/07.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/07.png)
 
 ## Bước 4: Tạo dữ liệu xe
 
@@ -112,15 +112,15 @@ SELECT * FROM cars;
 ### 5.1 Test đặt xe
 1. Đăng nhập thành công
 2. Truy cập trang đặt xe
-![](/images/007/08.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/08.png)
 3. Chọn **Xem chi tiết** trên thẻ xe
 4. Chọn nhận, ngày trả, dịch vụ (nếu có)
 5. Click **Chọn đặt**
-![](/images/007/09.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/09.png)
 6. Nhập thông tin còn thiếu và chọn **Đặt xe**
-![](/images/007/10.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/10.png)
 7. Xác nhận đặt thành công
-![](/images/007/11.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/11.png)
 
 ### 5.2 Kiểm tra dữ liệu đặt xe
 1. Vào **RDS Console** → **Query Editor**
@@ -130,7 +130,7 @@ USE carrentalweb;
 SELECT * FROM orders WHERE accountemail = [Email của bạn];
 ```
 3. Xác nhận booking đã được tạo
-![](/images/007/12.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/12.png)
 
 ## Bước tiếp theo
 
