@@ -36,12 +36,12 @@ After successfully deploying the Spring Boot application to Elastic Beanstalk an
    - **Email**: [Your Email]
    - **Password**: `123`
 3. Click **Register**
-![](/images/007/01.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/01.png)
 4. Check email for verification code
-![](/images/007/02.png)
-![](/images/007/03.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/02.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/03.png)
 5. Confirm successful registration
-![](/images/007/04.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/04.png)
 
 ### 2.2 Check Data in Database
 1. Go to **RDS Console** → **Query Editor**
@@ -52,7 +52,7 @@ USE carrentalweb;
 SELECT * FROM accounts WHERE full_name = 'testuser';
 ```
 4. Confirm user has been created
-![](/images/007/05.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/05.png)
 
 ## Step 3: Test Login Function
 
@@ -61,12 +61,12 @@ SELECT * FROM accounts WHERE full_name = 'testuser';
 2. Login with information just created:
    - **Email**: [Email registered in step 1]
    - **Password**: `123`
-![](/images/007/06.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/06.png)
 3. Check:
    - Login successful
    - Redirect to dashboard
    - Session created
-![](/images/007/07.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/07.png)
 
 ## Step 4: Create Car Data
 
@@ -112,15 +112,15 @@ SELECT * FROM cars;
 ### 5.1 Test Car Booking
 1. Login successfully
 2. Access car booking page
-![](/images/007/08.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/08.png)
 3. Select **View Details** on car card
 4. Choose pickup date, return date, services (if any)
 5. Click **Choose Booking**
-![](/images/007/09.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/09.png)
 6. Enter missing information and select **Book Car**
-![](/images/007/10.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/10.png)
 7. Confirm successful booking
-![](/images/007/11.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/11.png)
 
 ### 5.2 Check Booking Data
 1. Go to **RDS Console** → **Query Editor**
@@ -130,7 +130,7 @@ USE carrentalweb;
 SELECT * FROM orders WHERE accountemail = [Your Email];
 ```
 3. Confirm booking has been created
-![](/images/007/12.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/007/12.png)
 
 ## Next Step
 

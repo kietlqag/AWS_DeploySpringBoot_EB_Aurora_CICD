@@ -21,19 +21,19 @@ Sau khi hoàn thành workshop và test ứng dụng, bạn nên dọn dẹp các
 1. Vào **Elastic Beanstalk Console** → **Environments**
 2. Chọn environment `carrentalweb-prod`
 3. Click **Actions** → **Terminate environment**
-![](/images/009/01.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/01.png)
 4. Nhập tên environment và chọn **Terminate**
-![](/images/009/02.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/02.png)
 5. Xác nhận xoá thành công (Khi phía sau tên environment có chữ **terminated**)
-![](/images/009/03.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/03.png)
 
 ### 1.2 Xóa Application
 1. Sau khi environment bị xóa
 2. Chọn application `carrentalweb-app`
 3. Click **Actions** → **Delete application**
-![](/images/009/04.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/04.png)
 4. Nhập tên application để xác nhận và chọn **Delete**
-![](/images/009/05.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/05.png)
 5. Tên application sẽ biến mất sau khi xoá thành công
 
 ## Bước 2: Xóa Aurora Serverless Cluster
@@ -42,22 +42,22 @@ Sau khi hoàn thành workshop và test ứng dụng, bạn nên dọn dẹp các
 1. Vào **RDS Console** → **Databases**
 2. Chọn cluster `carrentalweb-aurora-cluster-instance-1`
 3. Click **Actions** → **Delete**
-![](/images/009/06.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/06.png)
 4. Nhập `delete me` và chọn **Delete**
-![](/images/009/07.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/07.png)
 5. Chọn tiếp cluster `carrentalweb-aurora-cluster`
 6. Click **Actions** → **Delete**
-![](/images/009/08.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/08.png)
 7. Chọn như hình và chọn **Delete DB Cluster**
-![](/images/009/09.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/09.png)
 8. Xác nhận xoá thành công
-![](/images/009/10.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/10.png)
 
 ### 2.2 Xóa Subnet Group
 1. Vào **RDS Console** → **Subnet groups**
 2. Chọn `carrentalweb-aurora-subnet-group`
 3. Chọn **Delete**
-![](/images/009/11.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/11.png)
 5. Click **Delete** lần nữa. Khi xoá thành công, tên của subnet group sẽ biến mất
 
 ## Bước 3: Xóa Security Groups
@@ -65,7 +65,7 @@ Sau khi hoàn thành workshop và test ứng dụng, bạn nên dọn dẹp các
 ### 3.1 Xóa RDS Security Group
 1. Tìm `carrentalweb-rds-sg`
 2. Chọn → **Actions** → **Delete security group**
-![](/images/009/13.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/13.png)
 3. Click **Delete**
 
 ### 3.2 Xóa EB Security Group (tương tự 3.1)
@@ -80,7 +80,7 @@ Sau khi hoàn thành workshop và test ứng dụng, bạn nên dọn dẹp các
 1. Vào **VPC Console** → **NAT gateways**
 2. Chọn `carrentalweb-nat-public1-us-east-1a`
 3. Click **Actions** → **Delete NAT gateway**
-![](/images/009/16.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/16.png)
 4. Nhập `delete` và Click **Delete**
 5. Thực hiện tương tự với NAT Gateway còn lại
 
@@ -88,7 +88,7 @@ Sau khi hoàn thành workshop và test ứng dụng, bạn nên dọn dẹp các
 1. Vào **VPC Console** → **Elastic IPs**
 2. Chọn EIP đang được sử dụng
 3. Click **Actions** → **Release Elastic IPs**
-![](/images/009/15.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/15.png)
 4. Click **Release**
 
 ### 4.3 Xóa Internet Gateway
@@ -96,29 +96,29 @@ Sau khi hoàn thành workshop và test ứng dụng, bạn nên dọn dẹp các
    - Vào **VPC Console** → **Internet gateways**
    - Chọn `carrentalweb-igw`
    - Click **Actions** → **Detach from VPC**
-   ![](/images/009/14.png)
+   ![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/14.png)
    - Click **Detach internet gateway**
 
 2. **Xóa Internet Gateway:**
    - Click **Actions** → **Delete internet gateway**
-   ![](/images/009/17.png)
+   ![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/17.png)
    - Nhập `delete` và Click **Delete**
 
 ### 4.4 Xóa VPC
 1. **VPC Console** → **Your VPCs**
 2. Chọn `carrentalweb-vpc`
 3. Click **Actions** → **Delete VPC**
-![](/images/009/12.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/12.png)
 4. Nhập `delete` và Click **Delete**
 5. VPC và những cấu hình liên quan như Subnet, Route table cũng sẽ được xoá theo
-![](/images/009/18.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/18.png)
 
 ## Bước 5: Xóa IAM Roles
 1. Vào **IAM Console** → **Users**
 2. Tìm `carrentalweb-cicd-user`
 3. Chọn → **Delete**
 4. Chọn **Deactivate access key**
-![](/images/009/19.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/009/19.png)
 4. Sau đó nhập `confirm` và Click **Delete user**
 
 ## Lưu ý quan trọng

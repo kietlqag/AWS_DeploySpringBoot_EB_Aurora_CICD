@@ -19,7 +19,7 @@ Security Groups act as virtual firewalls, controlling inbound/outbound traffic f
 1. Find and select **VPC** service
 2. Go to **Security Groups**
 3. Click **Create security group**
-![](/images/004/01.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/004/01.png)
 4. Fill in information:
 
     **Security group name:** `carrentalweb-eb-sg`  
@@ -42,9 +42,9 @@ Security Groups act as virtual firewalls, controlling inbound/outbound traffic f
 
 ### 1.4 Create Security Group
 1. Click **Create security group**
-![](/images/004/02.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/004/02.png)
 2. Note down **Security Group ID**
-![](/images/004/03.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/004/03.png)
 
 ## Step 2: Create Security Group for RDS (similar to step 1)
 
@@ -72,7 +72,7 @@ Security Groups act as virtual firewalls, controlling inbound/outbound traffic f
 ### 2.4 Create Security Group
 1. Click **Create security group**
 2. Note down **Security Group ID**
-![](/images/004/04.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/004/04.png)
 
 ## Important Notes
 

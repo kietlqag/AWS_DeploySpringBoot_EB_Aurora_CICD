@@ -19,7 +19,7 @@ Security Groups hoạt động như firewall ảo, kiểm soát traffic vào/ra 
 1. Tìm và chọn service **VPC**
 2. Vào **Security Groups**
 3. Click **Create security group**
-![](/images/004/01.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/004/01.png)
 4. Điền thông tin:
 
     **Security group name:** `carrentalweb-eb-sg`  
@@ -42,9 +42,9 @@ Security Groups hoạt động như firewall ảo, kiểm soát traffic vào/ra 
 
 ### 1.4 Tạo Security Group
 1. Click **Create security group**
-![](/images/004/02.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/004/02.png)
 2. Ghi lại **Security Group ID**
-![](/images/004/03.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/004/03.png)
 
 ## Bước 2: Tạo Security Group cho RDS (tương tự bước 1)
 
@@ -72,7 +72,7 @@ Security Groups hoạt động như firewall ảo, kiểm soát traffic vào/ra 
 ### 2.4 Tạo Security Group
 1. Click **Create security group**
 2. Ghi lại **Security Group ID**
-![](/images/004/04.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/004/04.png)
 
 ## Lưu ý quan trọng
 

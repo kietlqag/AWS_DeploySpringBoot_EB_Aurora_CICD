@@ -22,7 +22,7 @@ Amazon Aurora Serverless MySQL là một database serverless tự động scale 
 1. Tìm và chọn service **Aurora and RDS**
 2. Đảm bảo đang ở region **us-east-1** (hoặc region tương ứng ở các bước trước)
 3. Click **Create database**
-![](/images/005/01.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/005/01.png)
 
 ### 1.2 Cấu hình Database
 1. **Choose a database creation method**: Standard create
@@ -61,9 +61,9 @@ Amazon Aurora Serverless MySQL là một database serverless tự động scale 
 
 ### 1.7 Tạo Database
 1. Click **Create database**
-![](/images/005/02.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/005/02.png)
 2. Đợi status chuyển thành **Available**
-![](/images/005/03.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/005/03.png)
 
 ## Bước 2: Test Query Editor
 
@@ -73,10 +73,10 @@ Amazon Aurora Serverless MySQL là một database serverless tự động scale 
 3. **Database**: Chọn `carrentalweb-aurora-cluster`
 4. **Database user**: `adminws`
 5. **Database password**: [PASSWORD]
-![](/images/005/04.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/005/04.png)
 6. Click **Connect to database**
 7. Xác nhận kết nối thành công
-![](/images/005/05.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/005/05.png)
 
 ### 2.2 Test Query
 ```sql
@@ -97,7 +97,7 @@ INSERT INTO test_table (name) VALUES ('Test Data');
 SELECT * FROM test_table;
 ```
 - Xác nhận thành công
-![](/images/005/06.png)
+![](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/005/06.png)
 
 ## Bước 3: Cấu hình Environment Variables
 
