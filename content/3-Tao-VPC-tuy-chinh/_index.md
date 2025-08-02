@@ -61,7 +61,7 @@ VPC (10.0.0.0/16)
 1. Go to **Your VPCs**
 2. Confirm VPC `carrentalweb-vpc` has been created
 3. Note down **VPC ID**
-![VPC List](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/05.png)
+![VPC List](https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/images/003/05.PNG)
 
 ## Step 2: Verify Components
 
