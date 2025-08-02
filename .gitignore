@@ -1,7 +1,10 @@
 # Hugo default output directory
 /public/
 
-# Hugo generated files
+# Hugo default output directory
+/resources/_gen/
+
+# Hugo cache files
 .hugo_build.lock
 
 # Temporary files

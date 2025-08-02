@@ -8,6 +8,12 @@ baseURL = "https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
+# Enable relative URLs for better compatibility
+relativeURLs = false
+
+# Disable robots.txt generation (GitHub Pages handles this)
+enableRobotsTXT = false
+
 [params]
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "workshop"
