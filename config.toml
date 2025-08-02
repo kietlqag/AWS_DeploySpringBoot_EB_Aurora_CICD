@@ -2,7 +2,7 @@
 theme = "hugo-theme-learn"
 
 # Base URL for the site - GitHub Pages
-baseURL = "https://kietlqag.github.io/Workshop-template/"
+baseURL = "https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/"
 
 # For search functionality
 [outputs]
