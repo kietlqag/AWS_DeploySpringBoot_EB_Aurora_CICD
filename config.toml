@@ -1,8 +1,8 @@
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
 
-# Base URL for the site
-baseURL = "/"
+# Base URL for the site - GitHub Pages
+baseURL = "https://kietlqag.github.io/AWS_DeploySpringBoot_EB_Aurora_CICD/"
 
 # For search functionality
 [outputs]
